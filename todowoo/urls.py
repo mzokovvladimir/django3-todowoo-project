@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from todo import views
+from typing import List
 
-urlpatterns = [
+urlpatterns: List[path] = [
     path('admin/', admin.site.urls),
 
     # Auth
